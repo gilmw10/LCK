@@ -10,5 +10,7 @@
   margin: 8px;
   text-decoration: none;
   font-size: 15px;
-  margin: 0 40px;
+  position: relative;
+  left: 100px;
+  margin-right: 150px;
 }
