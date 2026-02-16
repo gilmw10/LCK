@@ -8,7 +8,7 @@ function Nav(){
       <div className="navbar">
         <Link className="menu" to={'/'}>MAIN</Link>
         <Link className="menu" to={'/about'}>ABOUT</Link>
-        <Link className="menu" to={'/TEAM'}>TEAM</Link>
+        <Link className="menu" to={'/team'}>TEAM</Link>
         <Link className="menu" to={'/sponsor'}>SPONSOR</Link>
         <Link className="menu" to={'/other'}>OTHER LEAGUE</Link>
       </div>

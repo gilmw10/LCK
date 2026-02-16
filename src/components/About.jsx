@@ -3,7 +3,7 @@ import lckbImage from "../assets/LCKb.png"
 
 function About(){
   return(
-    <div className="main-container">
+    <div className="about-container">
       <img src={lckbImage} alt="lckb" className="lckbimg" />
 
       <div className="sub-title">
