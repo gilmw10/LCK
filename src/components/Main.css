@@ -1,7 +1,14 @@
 .main-image{
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   scale: 45%;
+}
+
+.main-wrap{
+  height: 100vw;
+  width: 100vw;
+  background-color: black;
 }

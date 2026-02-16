@@ -4,8 +4,10 @@ import "./Main.css"
 
 function Main(){
   return (
-    <div className="main-image">
-      <img src={lckImage} alt="LCK image" />
+    <div className="main-wrap">
+      <div className="main-image">
+        <img src={lckImage} alt="LCK image" />
+      </div>
     </div>
   )
 }

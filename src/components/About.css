@@ -1,0 +1,33 @@
+.main-container{
+  background-color: white;
+  width: 100%;
+}
+
+.lckbimg{
+  width: 25%;
+  padding-left: 120px;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+.sub-title{
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 120px;
+}
+
+p{
+  margin: 0;
+}
+
+.description{
+  padding-left: 120px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.description2{
+  padding-left: 120px;
+  margin-top: 40px;
+  font-size: 20px;
+}
