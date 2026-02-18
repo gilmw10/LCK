@@ -10,31 +10,36 @@ const ScrollHandler = () => {
 
   useEffect(() => {
     const handleWheel = (e) => {
-      if (isScrolling) return; 
+      if (isScrolling || Math.abs(e.deltaY) < 15) return;
 
       const currentIndex = pageOrder.indexOf(location.pathname);
       if (currentIndex === -1) return;
 
+      let nextIndex = currentIndex;
+      let direction = 1;
+
       if (e.deltaY > 0) {
         if (currentIndex < pageOrder.length - 1) {
-          setIsScrolling(true);
-          navigate(pageOrder[currentIndex + 1]);
-        }
-      } else if (e.deltaY < 0) {
+          nextIndex = currentIndex + 1;
+          direction = 1;
+        } else return;
+      } else {
         if (currentIndex > 0) {
-          setIsScrolling(true);
-          navigate(pageOrder[currentIndex - 1]);
-        }
+          nextIndex = currentIndex - 1;
+          direction = -1;
+        } else return;
       }
 
-      setTimeout(() => setIsScrolling(false), 1000);
+      setIsScrolling(true);
+      navigate(pageOrder[nextIndex], { state: { direction } });
+      setTimeout(() => setIsScrolling(false), 700);
     };
 
     window.addEventListener('wheel', handleWheel);
     return () => window.removeEventListener('wheel', handleWheel);
   }, [location.pathname, isScrolling, navigate]);
 
-  return null; 
+  return null;
 };
 
 export default ScrollHandler;
