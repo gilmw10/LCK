@@ -1,26 +1,16 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Nav from './components/Nav'
-import Main from './components/Main'
-import About from './components/About'
-import Team from './components/Team'
-import Sponsor from './components/Sponsor'
-
+import ScrollHandler from './components/ScrollHandler'
+import AnimatedRoutes from './components/AnimatedRoutes'
 
 function App() {
-
   return (
-    <div className='main'>
+    <div className='main' style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
       <BrowserRouter>
-        <div className='nav-container'>
-          <Nav/>
-          <Routes>
-            <Route path="/" element={<Main/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/team" element={<Team/>}/>
-            <Route path="/sponsor" element={<Sponsor/>}/>
-          </Routes>
-        </div>
+        <Nav/>
+        <ScrollHandler />
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   )
