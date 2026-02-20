@@ -5,7 +5,7 @@ import Main from './Main';
 import About from './About';
 import Team from './Team';
 import Sponsor from './Sponsor';
-import Other from './other';
+import Other from './Other';
 
 const pageOrder = ["/", "/about", "/team", "/sponsor", "/other"];
 
