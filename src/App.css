@@ -1,31 +1,26 @@
-/* App.css */
-
-/* 전체 화면 높이를 억지로 잡아줍니다 */
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: black; /* 전체 배경을 검정으로 통일 */
+  background-color: black;
 }
 
 .main {
   position: relative;
-  width: 100vw;       /* 화면 너비 꽉 차게 */
-  height: 100vh;      /* 화면 높이 꽉 차게 */
-  overflow: hidden;   /* 넘치는 애니메이션 가리기 */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: black;
 }
 
-/* 애니메이션이 일어나는 컨테이너 */
 .content-container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-/* 각 컴포넌트들의 실제 배경 */
 .main > div, section {
   width: 100%;
   height: 100%;
-  background-color: black; /* 각 컴포넌트도 배경색을 명시 */
+  background-color: black;
 }

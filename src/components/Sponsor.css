@@ -1,7 +1,7 @@
 .sponsor-container{
   background-color: white;
   width: 100vw;
-  height: 100vw;
+  min-height: 100vh;
 }
 
 .sponsor-title{
@@ -25,4 +25,68 @@
 .sponsor-image{
   width: 50%;
   margin-left: 590px;
+}
+@media (max-width: 768px) {
+  .sponsor-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .sponsor-title{
+    margin-left: 0;
+    width: 100%;
+    padding-top: 80px;
+    font-size: 24px;
+  }
+
+  .sponsor-description{
+    padding-left: 0;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .sponsor-image{
+    width: 80%;
+    margin: 40px auto 0;
+    display: block;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sponsor-title{
+    margin-left: 80px;
+    width: 40%;
+  }
+
+  .sponsor-description{
+    padding-left: 200px;
+  }
+
+  .sponsor-image{
+    width: 55%;
+    margin-left: 420px;
+  }
+}
+@media (min-width: 2560px) {
+  .sponsor-container{
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+
+  .sponsor-title{
+    margin-left: 200px;
+    width: 25%;
+    font-size: 36px;
+  }
+
+  .sponsor-description{
+    padding-left: 420px;
+    font-size: 20px;
+  }
+
+  .sponsor-image{
+    width: 40%;
+    margin-left: 900px;
+  }
 }

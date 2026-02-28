@@ -21,3 +21,28 @@
   height: auto;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .other-container{
+    padding: 80px 16px 40px;
+    box-sizing: border-box;
+  }
+
+  .main-title{
+    padding-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .limg{
+    max-width: 70%;
+  }
+}
+@media (min-width: 2560px) {
+  .other-container{
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+
+  .limg{
+    max-width: 35%;
+  }
+}

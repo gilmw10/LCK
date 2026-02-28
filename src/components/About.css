@@ -1,7 +1,7 @@
 .about-container{
   background-color: white;
   width: 100vw;
-  height: 100vw;
+  min-height: 100vh;
 }
 
 .lckbimg{
@@ -31,4 +31,78 @@ p{
   padding-left: 120px;
   margin-top: 40px;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .about-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .lckbimg{
+    width: 70%;
+    max-width: 260px;
+    padding-left: 0;
+    padding-top: 0;
+    margin: 80px auto 24px;
+    display: block;
+  }
+
+  .sub-title,
+  .description,
+  .description2{
+    padding-left: 0;
+  }
+
+  .sub-title{
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .description,
+  .description2{
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-container{
+    min-height: 100vh;
+  }
+
+  .lckbimg{
+    width: 30%;
+    padding-left: 80px;
+    padding-top: 120px;
+  }
+
+  .sub-title,
+  .description,
+  .description2{
+    padding-left: 80px;
+  }
+}
+@media (min-width: 2560px) {
+  .about-container{
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+
+  .lckbimg{
+    width: 20%;
+    padding-left: 200px;
+    padding-top: 200px;
+  }
+
+  .sub-title{
+    font-size: 32px;
+    padding-left: 200px;
+  }
+
+  .description,
+  .description2{
+    font-size: 24px;
+    padding-left: 200px;
+  }
 }
